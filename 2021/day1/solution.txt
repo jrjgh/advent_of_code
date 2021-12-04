@@ -1,0 +1,9 @@
+⍝ Solution in APL
+⍝ Read input from file and parse
+nums ← ⍎¨⊃⎕NGET'/Users/jj/code/advent_of_code/2021/day1/input.txt' 1
+
+⍝ Part 1: Count pairs in which second is greater (1521)
++/ 2 </ nums
+
+⍝ Part 2: Sum every 3 elements, count pairs of sums in which second is greater (1543)
++/ 2 </ 3 +/ nums
